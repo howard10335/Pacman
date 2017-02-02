@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="pac_man">
+</Property><Property Name="方案檔" Value="C:\Documents and Settings\Administrator\桌面\pac_man\pac_man.sln">
+</Property><Property Name="Date" Value="2009年6月10日">
+</Property><Property Name="Time" Value="11:33">
+</Property></Properties><Event ErrorLevel="0" Project="pac_man" Source="pac_man\pac_man.csproj" Description="專案轉換成功">
+</Event><Event ErrorLevel="3" Project="pac_man" Source="pac_man\pac_man.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="pac_man.sln" Description="方案轉換成功">
+</Event><Event ErrorLevel="3" Project="" Source="pac_man.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="pac_man" Source="pac_man\pac_man.csproj" Description="掃描完成: 專案檔不需要升級。">
+</Event></UpgradeLog>

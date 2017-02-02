@@ -1,0 +1,12 @@
+C:\Documents and Settings\Administrator\桌面\pac_man\pac_man\bin\Release\SCORES.mdb
+C:\Documents and Settings\Administrator\桌面\pac_man\pac_man\bin\Release\pac_man.exe.config
+C:\Documents and Settings\Administrator\桌面\pac_man\pac_man\bin\Release\pac_man.exe
+C:\Documents and Settings\Administrator\桌面\pac_man\pac_man\bin\Release\pac_man.pdb
+C:\Documents and Settings\Administrator\桌面\pac_man\pac_man\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\pac_man\pac_man\obj\Release\pac_man.Form1.resources
+C:\Documents and Settings\Administrator\桌面\pac_man\pac_man\obj\Release\pac_man.Form2.resources
+C:\Documents and Settings\Administrator\桌面\pac_man\pac_man\obj\Release\pac_man.Form3.resources
+C:\Documents and Settings\Administrator\桌面\pac_man\pac_man\obj\Release\pac_man.Properties.Resources.resources
+C:\Documents and Settings\Administrator\桌面\pac_man\pac_man\obj\Release\pac_man.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\桌面\pac_man\pac_man\obj\Release\pac_man.exe
+C:\Documents and Settings\Administrator\桌面\pac_man\pac_man\obj\Release\pac_man.pdb
