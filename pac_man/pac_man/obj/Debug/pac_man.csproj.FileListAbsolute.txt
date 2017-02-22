@@ -63,3 +63,15 @@ J:\pac_man\pac_man\obj\Debug\pac_man.csproj.GenerateResource.Cache
 C:\Users\howardyang\Desktop\pac_man\pac_man\bin\Debug\pac_man.exe.config
 C:\Users\howardyang\Desktop\pac_man\pac_man\obj\Debug\pac_man.exe
 C:\Users\howardyang\Desktop\pac_man\pac_man\obj\Debug\pac_man.pdb
+C:\Users\howardyang\Desktop\Pacman-master\pac_man\pac_man\bin\Debug\pac_man.exe.config
+C:\Users\howardyang\Desktop\Pacman-master\pac_man\pac_man\obj\Debug\pac_man.exe
+C:\Users\howardyang\Desktop\Pacman-master\pac_man\pac_man\obj\Debug\pac_man.pdb
+C:\Users\howardyang\Desktop\Pacman-master\pac_man\pac_man\bin\Debug\Database1.mdb
+C:\Users\howardyang\Desktop\Pacman-master\pac_man\pac_man\bin\Debug\pac_man.exe
+C:\Users\howardyang\Desktop\Pacman-master\pac_man\pac_man\bin\Debug\pac_man.pdb
+C:\Users\howardyang\Desktop\Pacman-master\pac_man\pac_man\obj\Debug\pac_man.csprojResolveAssemblyReference.cache
+C:\Users\howardyang\Desktop\Pacman-master\pac_man\pac_man\obj\Debug\pac_man.Form1.resources
+C:\Users\howardyang\Desktop\Pacman-master\pac_man\pac_man\obj\Debug\pac_man.Form2.resources
+C:\Users\howardyang\Desktop\Pacman-master\pac_man\pac_man\obj\Debug\pac_man.Form4.resources
+C:\Users\howardyang\Desktop\Pacman-master\pac_man\pac_man\obj\Debug\pac_man.Properties.Resources.resources
+C:\Users\howardyang\Desktop\Pacman-master\pac_man\pac_man\obj\Debug\pac_man.csproj.GenerateResource.Cache

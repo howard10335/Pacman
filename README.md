@@ -7,4 +7,4 @@ A little modified for the project can open in Visual Studio 2010 or later.
 ![alt tag](https://raw.githubusercontent.com/howard10335/Pacman/master/Instructions.png)
 ![alt tag](https://raw.githubusercontent.com/howard10335/Pacman/master/GamePage.png)
 ## Known issue
-All control items in winform will shift Location when Windows setting display not 100%.
+~~All control items in winform will shift Location when Windows setting display not 100%.~~ - Solved

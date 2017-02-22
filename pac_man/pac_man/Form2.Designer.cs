@@ -76,8 +76,7 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::pac_man.Properties.Resources.pacmanRight;
             this.ClientSize = new System.Drawing.Size(307, 281);
             this.Controls.Add(this.textBox1);
