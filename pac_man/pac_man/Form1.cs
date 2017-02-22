@@ -20,14 +20,14 @@ namespace pac_man
         {
             InitializeComponent();
         }
-
+        
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             switch (e.KeyCode)
             {
                 case Keys.Up:
                     moveX = 0;
-                    moveY = -5;
+                    moveY=-5;
                     eatscore();
                     pacman.Image = pac_man.Properties.Resources.pacmanUp;
                     break;
@@ -93,7 +93,7 @@ namespace pac_man
         Rectangle[] rects;
         Rectangle[] beans;
         PictureBox[] wall;
-        int[] eatbeans = new int[150];
+        int[] eatbeans = new int[150]; 
 
         void CreateBeans()
         {
@@ -260,8 +260,8 @@ namespace pac_man
             block = new Rectangle[2];
             rects = new Rectangle[50];
             wall = new PictureBox[50];
-            block[0] = new Rectangle(block1.Location.X, block1.Location.Y, block1.Width, block1.Height);
-            block[1] = new Rectangle(block2.Location.X, block2.Location.Y, block2.Width, block2.Height);
+            block[0] = new Rectangle(block1.Location.X,block1.Location.Y,block1.Width,block1.Height);
+            block[1] = new Rectangle(block2.Location.X, block2.Location.Y, block2.Width, block2.Height);            
             wall[0] = wall1;
             wall[1] = wall2;
             wall[2] = wall3;
@@ -320,7 +320,7 @@ namespace pac_man
 
         private void Form1_Activated(object sender, EventArgs e)
         {
-            CreateOutOfBounds();
+            CreateOutOfBounds();            
             CreateBeans();
         }
         bool CheckBounds()
@@ -336,12 +336,12 @@ namespace pac_man
             }
             if (tempRect.IntersectsWith(block[0]))
             {
-                pacman.Location = new Point(728, 275);
+                pacman.Location = new Point(545, 220);
                 tempReturn = false;
             }
             if (tempRect.IntersectsWith(block[1]))
             {
-                pacman.Location = new Point(162, 275);
+                pacman.Location = new Point(123, 218);
                 tempReturn = false;
             }
             return tempReturn;
@@ -364,7 +364,7 @@ namespace pac_man
                     lifeleft--;
                     if (lifeleft == 2)
                     {
-                        life1.Image = pac_man.Properties.Resources.black;
+                        life1.Image =  pac_man.Properties.Resources.black;
                     }
                     if (lifeleft == 1)
                     {
@@ -372,17 +372,17 @@ namespace pac_man
                     }
                     if (lifeleft == 0)
                     {
-                        life3.Image = pac_man.Properties.Resources.black;
+                        life3.Image =  pac_man.Properties.Resources.black;
                         MessageBox.Show("Game over!!");
                         End();
                         this.Close();
                     }
-                    ghost1.Location = new Point(396, 260);
-                    ghost2.Location = new Point(431, 260);
-                    ghost3.Location = new Point(463, 260);
-                    ghost4.Location = new Point(396, 289);
+                    ghost1.Location = new Point(297, 208);                    
+                    ghost2.Location = new Point(323, 208);
+                    ghost3.Location = new Point(347, 208);
+                    ghost4.Location = new Point(297, 231);
                     pacman.Image = pac_man.Properties.Resources.pacmanRight;
-                    pacman.Location = new Point(447, 438);
+                    pacman.Location = new Point(335, 353);
                     ghosts[0] = new Rectangle(ghost1.Location.X, ghost1.Location.Y, ghost1.Width, ghost1.Height);
                     ghosts[1] = new Rectangle(ghost2.Location.X, ghost2.Location.Y, ghost2.Width, ghost2.Height);
                     ghosts[2] = new Rectangle(ghost3.Location.X, ghost3.Location.Y, ghost3.Width, ghost3.Height);
@@ -394,7 +394,7 @@ namespace pac_man
         Random rnd = new Random();
         int Gway = 2;
         int B = 0;
-        Rectangle[] ghosts = new Rectangle[4];
+        Rectangle[] ghosts=new Rectangle[4];
         void Ghost1()
         {
             if (pacman.Location.Y < 220)
@@ -437,7 +437,7 @@ namespace pac_man
                     GmoveY = -10;
                     if (CheckghostBound(ghost1))
                     {
-                        Gway = 1;
+                            Gway = 1;
                     }
                     else
                     {
@@ -520,7 +520,7 @@ namespace pac_man
                     }
                 }
             }
-            if (pacman.Location.Y > 220)
+            if(pacman.Location.Y>220)
             {
                 if (Gway == 1)//up
                 {
@@ -569,15 +569,15 @@ namespace pac_man
                         if (CheckghostBound(ghost1))
                         {
                             GmoveX = -10;
-                            GmoveY = 0;
-                            if (CheckghostBound(ghost1))
-                            {
-                                Gway = rnd.Next(1, 4);
-                                if (Gway == 3)
-                                    Gway = 2;
-                            }
-                            else
-                                Gway = 1;
+                        GmoveY = 0;
+                        if (CheckghostBound(ghost1))
+                        {
+                            Gway = rnd.Next(1, 4);
+                            if (Gway == 3)
+                                Gway = 2;
+                        }
+                        else
+                            Gway = 1;
                         }
                     }
                 }
@@ -693,12 +693,12 @@ namespace pac_man
                             End();
                             this.Close();
                         }
-                        ghost1.Location = new Point(396, 260);
-                        ghost2.Location = new Point(431, 260);
-                        ghost3.Location = new Point(463, 260);
-                        ghost4.Location = new Point(396, 289);
+                        ghost1.Location = new Point(297, 208);
+                        ghost2.Location = new Point(323, 208);
+                        ghost3.Location = new Point(347, 208);
+                        ghost4.Location = new Point(297, 231);
                         pacman.Image = pac_man.Properties.Resources.pacmanRight;
-                        pacman.Location = new Point(447, 438);
+                        pacman.Location = new Point(335, 353);
                         ghosts[0] = new Rectangle(ghost1.Location.X, ghost1.Location.Y, ghost1.Width, ghost1.Height);
                         ghosts[1] = new Rectangle(ghost2.Location.X, ghost2.Location.Y, ghost2.Width, ghost2.Height);
                         ghosts[2] = new Rectangle(ghost3.Location.X, ghost3.Location.Y, ghost3.Width, ghost3.Height);
@@ -1009,12 +1009,12 @@ namespace pac_man
                             End();
                             this.Close();
                         }
-                        ghost1.Location = new Point(396, 260);
-                        ghost2.Location = new Point(431, 260);
-                        ghost3.Location = new Point(463, 260);
-                        ghost4.Location = new Point(396, 289);
+                        ghost1.Location = new Point(297, 208);
+                        ghost2.Location = new Point(323, 208);
+                        ghost3.Location = new Point(347, 208);
+                        ghost4.Location = new Point(297, 231);
                         pacman.Image = pac_man.Properties.Resources.pacmanRight;
-                        pacman.Location = new Point(447, 438);
+                        pacman.Location = new Point(335, 353);
                         ghosts[0] = new Rectangle(ghost1.Location.X, ghost1.Location.Y, ghost1.Width, ghost1.Height);
                         ghosts[1] = new Rectangle(ghost2.Location.X, ghost2.Location.Y, ghost2.Width, ghost2.Height);
                         ghosts[2] = new Rectangle(ghost3.Location.X, ghost3.Location.Y, ghost3.Width, ghost3.Height);
@@ -1324,12 +1324,12 @@ namespace pac_man
                             End();
                             this.Close();
                         }
-                        ghost1.Location = new Point(396, 260);
-                        ghost2.Location = new Point(431, 260);
-                        ghost3.Location = new Point(463, 260);
-                        ghost4.Location = new Point(396, 289);
+                        ghost1.Location = new Point(297, 208);
+                        ghost2.Location = new Point(323, 208);
+                        ghost3.Location = new Point(347, 208);
+                        ghost4.Location = new Point(297, 231);
                         pacman.Image = pac_man.Properties.Resources.pacmanRight;
-                        pacman.Location = new Point(447, 438);
+                        pacman.Location = new Point(335, 353);
                         ghosts[0] = new Rectangle(ghost1.Location.X, ghost1.Location.Y, ghost1.Width, ghost1.Height);
                         ghosts[1] = new Rectangle(ghost2.Location.X, ghost2.Location.Y, ghost2.Width, ghost2.Height);
                         ghosts[2] = new Rectangle(ghost3.Location.X, ghost3.Location.Y, ghost3.Width, ghost3.Height);
@@ -1444,7 +1444,7 @@ namespace pac_man
                         if (CheckghostBound(ghost4))
                         {
                             Gway4 = rnd.Next(2, 4);
-                            if (Gway4 == 3)
+                            if (Gway4== 3)
                                 Gway4 = 4;
                         }
                         else
@@ -1519,8 +1519,8 @@ namespace pac_man
                             if (CheckghostBound(ghost4))
                             {
                                 Gway4 = rnd.Next(1, 4);
-                                if (Gway4 == 3)
-                                    Gway4 = 2;
+                                if (Gway4== 3)
+                                    Gway4= 2;
                             }
                             else
                                 Gway4 = 1;
@@ -1639,12 +1639,12 @@ namespace pac_man
                             End();
                             this.Close();
                         }
-                        ghost1.Location = new Point(396, 260);
-                        ghost2.Location = new Point(431, 260);
-                        ghost3.Location = new Point(463, 260);
-                        ghost4.Location = new Point(396, 289);
+                        ghost1.Location = new Point(297, 208);
+                        ghost2.Location = new Point(323, 208);
+                        ghost3.Location = new Point(347, 208);
+                        ghost4.Location = new Point(297, 231);
                         pacman.Image = pac_man.Properties.Resources.pacmanRight;
-                        pacman.Location = new Point(447, 438);
+                        pacman.Location = new Point(335, 353);
                         ghosts[0] = new Rectangle(ghost1.Location.X, ghost1.Location.Y, ghost1.Width, ghost1.Height);
                         ghosts[1] = new Rectangle(ghost2.Location.X, ghost2.Location.Y, ghost2.Width, ghost2.Height);
                         ghosts[2] = new Rectangle(ghost3.Location.X, ghost3.Location.Y, ghost3.Width, ghost3.Height);
@@ -1662,54 +1662,54 @@ namespace pac_man
             if (G)
             {
                 if (B == 10)
-                    ghost1.Location = new Point(447, 219);
+                    ghost1.Location = new Point(335, 175);
                 if (B == 50)
-                    ghost2.Location = new Point(447, 219);
+                    ghost2.Location = new Point(335, 175);
                 if (B == 100)
-                    ghost3.Location = new Point(447, 219);
+                    ghost3.Location = new Point(335, 175);
                 if (B == 150)
-                    ghost4.Location = new Point(447, 219);
+                    ghost4.Location = new Point(335, 175);
             }
             else
             {
-                if (B == 10 && ghost1.Location == new Point(396, 260))
-                    ghost1.Location = new Point(447, 219);
-                if (B == 50 && ghost2.Location == new Point(431, 260))
-                    ghost2.Location = new Point(447, 219);
-                if (B == 100 && ghost3.Location == new Point(463, 260))
-                    ghost3.Location = new Point(447, 219);
-                if (B == 150 && ghost4.Location == new Point(396, 289))
-                    ghost4.Location = new Point(447, 219);
+                if (B == 10 && ghost1.Location==new Point(297,208))
+                    ghost1.Location = new Point(335, 175);
+                if (B == 50 && ghost2.Location == new Point(323, 208))
+                    ghost2.Location = new Point(335, 175);
+                if (B == 100 && ghost3.Location == new Point(347, 208))
+                    ghost3.Location = new Point(335, 175);
+                if (B == 150 && ghost4.Location == new Point(297, 231))
+                    ghost4.Location = new Point(335, 175);
             }
-            if (B > 10 || ghost1.Location != new Point(396, 260))
+            if (B > 10||ghost1.Location!=new Point(297,208))
                 Ghost1();
-            if (B > 50 || ghost2.Location != new Point(431, 260))
+            if (B > 50||ghost2.Location != new Point(323, 208))
                 Ghost2();
-            if (B > 100 || ghost3.Location != new Point(463, 260))
+            if (B>100||ghost3.Location != new Point(347, 208))
                 Ghost3();
-            if (B > 150 || ghost4.Location != new Point(396, 289))
+            if (B > 150||ghost4.Location != new Point(297, 231))
                 Ghost4();
             B++;
-        }
-
-
-
+        }                  
+                    
+                    
+                    
         bool CheckghostBound(PictureBox GHOST)
         {
-            bool A = true;
-            Rectangle ghost = new Rectangle(GHOST.Location.X + GmoveX, GHOST.Location.Y + GmoveY, GHOST.Width, GHOST.Height);
+            bool A=true;
+            Rectangle ghost = new Rectangle(GHOST.Location.X+GmoveX, GHOST.Location.Y+GmoveY, GHOST.Width, GHOST.Height);
             for (int i = 0; i < 50; i++)
             {
                 if (ghost.IntersectsWith(rects[i]))
                     A = false;
                 if (ghost.IntersectsWith(block[0]))
                 {
-                    GHOST.Location = new Point(728, 275);
+                    GHOST.Location = new Point(545, 220);
                     A = false;
                 }
                 if (ghost.IntersectsWith(block[1]))
                 {
-                    GHOST.Location = new Point(162, 275);
+                    GHOST.Location = new Point(123, 218);
                     A = false;
                 }
             }
@@ -1718,7 +1718,7 @@ namespace pac_man
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (Eatghost > 70 && Eatghost < 100)
+            if (Eatghost > 70&&Eatghost<100)
             {
                 label3.Text = "快要變回來了喔";
             }
@@ -1764,7 +1764,7 @@ namespace pac_man
             }
             Eatghost++;
             END = 0;
-            for (int i = 0; i < 150; i++)
+            for (int i = 0; i < 150;i++ )
             {
                 END = END + eatbeans[i];
             }
@@ -1781,27 +1781,28 @@ namespace pac_man
         void EATGHOST()
         {
             Rectangle tempRect = new Rectangle(pacman.Location.X + moveX, pacman.Location.Y + moveY, pacman.Width, pacman.Height);
+
             if (tempRect.IntersectsWith(ghosts[0]))
             {
-                ghost1.Location = new Point(396, 260);
+                ghost1.Location = new Point(297, 208);
                 score = score + 100;
                 label1.Text = score.ToString();
             }
             if (tempRect.IntersectsWith(ghosts[1]))
             {
-                ghost2.Location = new Point(431, 260);
+                ghost2.Location = new Point(323, 208);
                 score = score + 100;
                 label1.Text = score.ToString();
             }
             if (tempRect.IntersectsWith(ghosts[2]))
             {
-                ghost3.Location = new Point(463, 260);
+                ghost3.Location = new Point(347, 208);
                 score = score + 100;
                 label1.Text = score.ToString();
             }
             if (tempRect.IntersectsWith(ghosts[3]))
             {
-                ghost4.Location = new Point(396, 289);
+                ghost4.Location = new Point(297, 231);
                 score = score + 100;
                 label1.Text = score.ToString();
             }
